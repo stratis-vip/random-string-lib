@@ -5,6 +5,15 @@ const nameF = path.join(__dirname, "/names.txt");
 let fNames = [],
   lNames = [];
 
+  let namesA = fs
+  .readFileSync(nameF, { encoding: "utf8" })
+  .split("\n")
+  .map(val => val.trim())
+  .map(val => val.split(" "))
+  .map(val => {
+    fNames.push(val[0]);
+    lNames.push(val[1]);
+  });
 const fileName = path.join(__dirname, "/free_email_provider_domains.txt");
 
 let emails = fs
