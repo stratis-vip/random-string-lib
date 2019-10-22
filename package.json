@@ -1,0 +1,16 @@
+{
+  "name": "random-string-lib",
+  "version": "1.0.0",
+  "description": "create random strings",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "keywords": [],
+  "author": "Stratis Christodoulou",
+  "license": "ISC",
+  "devDependencies": {
+    "jest": "^24.9.0"
+  },
+  "dependencies": {}
+}
